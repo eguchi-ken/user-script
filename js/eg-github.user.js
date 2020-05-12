@@ -41,6 +41,11 @@ class EgGithub {
     this.avatars.forEach((value, key) => {
       this.container.prepend(value)
     })
+    this.container.querySelectorAll('img').forEach((img) => {
+      img.setAttribute('width', 40)
+      img.setAttribute('height', 40)
+    })
+  }
   }
 }
 
